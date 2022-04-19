@@ -3,23 +3,31 @@ h1, h2{
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: normal;
+  font-size: 50px;
+  color: #000;
+  
   
 }
-
+ 
 p{
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-size: 18px;
+  font-size: 30px;
+  color:  rgb(6, 96, 138);
+  
 
 }
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(195, 240, 240);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(83, 194, 245);
+  background-color: rgb(6, 96, 138);
 }
 
 .topnav a {
@@ -61,6 +69,7 @@ display: block;
 /*passa o mause em cima e da efeito */
     margin-left: auto;
     margin-right: auto;
+    border-radius: 20px;s
 
 
 
