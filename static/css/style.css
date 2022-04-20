@@ -1,3 +1,9 @@
+ /*REset */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 h1, h2{
   text-align: center;
@@ -6,12 +12,21 @@ h1, h2{
   font-size: 50px;
   color: #000;
 }
+
+img{ 
+  max-width: 100%;
+  display: block;
+}
  
 p{
-  text-align: center;
+  display: flex;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 30px;
   color:  rgb(6, 96, 138);
+  max-width: 1400px;
 }
 
 body {
@@ -48,7 +63,6 @@ body {
 }
 
 .IMG-principal{
-
   width: 600pt;
   display: block;
   margin-left: auto;
@@ -58,14 +72,31 @@ body {
 }
 
 .IMG-secundaria{
-/*Largura da Imagem  */
-width: 500pt;
-/* */
-display: block;
-/*passa o mause em cima e da efeito */
+  /*Largura da Imagem  */
+  width: 500pt;
+  /* */
+  display: block;
+  /*passa o mause em cima e da efeito */
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
+}
+
+.IMG-tec{
+  /*Largura da Imagem  */
+  width: 800pt;
+  /* */
+  display: block;
+  /*passa o mause em cima e da efeito */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px; 
+}
+
+.grid1{
+    display:grid;
+    /*Divide o grid em parte, no caso 3 partes de 1fr que seria 33% da pagina */
+    grid-template-columns: repeat(1,1fr);
 }
 
 .area_form_contact{
@@ -90,12 +121,14 @@ display: block;
   grid-column: 1;
   grid-row: 1;
 }
+
 .img_contact{
   width: 50px;
   height: 50px;
   grid-column: 1;
   grid-row: 1;
 }
+
 
 .form_contact{
   width: 550px;
