@@ -10,6 +10,8 @@ h1, h2{
 }
  
 p{
+  display: flex;
+  justify-content: space-between;
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 30px;
