@@ -33,6 +33,7 @@ body {
   color: black;
 }
 /*Alteração de propriedades da classe box1,box2 e box3.
+-->  setando a propriedade display: flex em todos os boxs.
 ---> flex direction : orientação do box(classe) --> column ou row.
 ---> flex-wrap: nowrap | wrap | wrap-reverse  --> quebra de itens na linha 
 ---> flex-flow: row nowrap | row wrap | column nowrap | column wrap; --> inclui vários valores relacionados a mais de uma propriedade
@@ -41,43 +42,49 @@ body {
 */
 
 .box1{
-  flex-direction: column;
   display: flex;
-  align-items: flex-end;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: rgb(194, 204, 233);
 }
 .box2{
-  flex-direction: row;
   display: flex;
-  justify-content: space-around;
-  text-align: center;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: rgb(230, 211, 126);
 }
 .box3{
-  flex-direction: row;
   display: flex;
-  text-align: center;
-  background-color: rgb(199, 148, 233);
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(196, 233, 148);
 }
 .um{
-  flex: 3;
-  
-}
+
+  flex: 3; 
+} 
 .dois{
   flex: 3;
 }
 .tres{
   flex: 3;
 }
+
 #imgprimeirospassos{
   height: 190px;
   width: 250px;
 }
-#saibamais{
-    align-self: center;
-}
 
+#saibamais{
+    align-self: flex-end;
+}
+:dir(footersaibamais){
+    background-color:rgb(65, 204, 209)
+}
+:dir(saibamais){
+  background-color: rgb(0, 255, 200);
+}
 main{
   text-align: center;
 }
