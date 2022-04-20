@@ -32,6 +32,56 @@ body {
   background-color: #ddd;
   color: black;
 }
+/*Alteração de propriedades da classe box1,box2 e box3.
+---> flex direction : orientação do box(classe) --> column ou row.
+---> flex-wrap: nowrap | wrap | wrap-reverse  --> quebra de itens na linha 
+---> flex-flow: row nowrap | row wrap | column nowrap | column wrap; --> inclui vários valores relacionados a mais de uma propriedade
+---> justify-content: 3 | flex-end | center | space-between | space-around | space-evenly; --> define o alinhamento dos itens dentro do eixo principal 
+-->  align-items: stretch | flex-start | flex-end | center | baseline; --> alinhamento dos itens das colunas.
+*/
 
+.box1{
+  flex-direction: column;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  background-color: rgb(194, 204, 233);
+}
+.box2{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgb(230, 211, 126);
+}
+.box3{
+  flex-direction: row;
+  display: flex;
+  text-align: center;
+  background-color: rgb(199, 148, 233);
+}
+.um{
+  flex: 3;
+  
+}
+.dois{
+  flex: 3;
+}
+.tres{
+  flex: 3;
+}
+#imgprimeirospassos{
+  height: 190px;
+  width: 250px;
+}
+#saibamais{
+    align-self: center;
+}
 
+main{
+  text-align: center;
+}
+footer{
+  text-align: center;
+}
 
