@@ -5,8 +5,6 @@ h1, h2{
   font-style: normal;
   font-size: 50px;
   color: #000;
-  
-  
 }
  
 p{
@@ -14,9 +12,8 @@ p{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 30px;
   color:  rgb(6, 96, 138);
-  
-
 }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -38,10 +35,10 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+
 .logo{
   width: 50px;
   height: 50px;
-
 }
 
 /*passa o mause em cima e da efeito */
@@ -50,67 +47,14 @@ body {
   color: black;
 }
 
-/* ------------------------------------------ */
-/* Formatação relativa a fita da tela contato */
-/* ------------------------------------------ */
-.container_fita {
-  /* Center the content */
-  align-items: center;
-  display: grid;
-  justify-content: center;
-
-  /* Background color */
-  background-color: #bbb;
-
-  /* Size */
-  height: 32px;
-
-  /* Use to position the corners */
-  /* position: relative; */
-}
-.container__side {
-  bottom: -8px;
-  position: absolute;
-
-  /* Displayed under the container */
-  z-index: -1;
-
-  /* Background */
-  border: 16px solid #ccc;
-  border-left-color: transparent;
-}
-.container__side--left {
-  left: -24px;
-}
-.container__side--right {
-  right: -24px;
-}
-.container__triangle {
-  position: absolute;
-  top: 100%;
-
-  border: 8px solid transparent;
-  border-bottom-width: 0;
-  border-top-color: #aaa;
-}
-.container__triangle--left {
-  border-right-width: 0;
-  left: 0;
-}
-.container__triangle--right {
-  border-left-width: 0;
-  right: 0;
-}
-
 .IMG-principal{
 
   width: 600pt;
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*Aredonda borda */
+  margin-left: auto;
+  margin-right: auto;
+  /*Aredonda borda */
   border-radius: 20px;
-  
 }
 
 .IMG-secundaria{
@@ -121,5 +65,54 @@ display: block;
 /*passa o mause em cima e da efeito */
     margin-left: auto;
     margin-right: auto;
-    border-radius: 20px;s
+    border-radius: 20px;
+}
+
+.area_form_contact{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(83, 194, 245);
+  padding: 1px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(83, 194, 245); 
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+
+.title_contact{
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 146, 179);
+  font-weight: bold;
+  margin-top: 10px;
+  grid-column: 1;
+  grid-row: 1;
+}
+.img_contact{
+  width: 50px;
+  height: 50px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.form_contact{
+  width: 550px;
+  height: 490px;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 55px;
+  padding-top: 30px;
+}
+
+.form_contact input, textarea{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  border: none;
+  /* padding: 10px; */
+  margin: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
