@@ -62,41 +62,77 @@ body {
   color: black;
 }
 
-.IMG-principal{
-  width: 600pt;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  /*Aredonda borda */
-  border-radius: 20px;
-}
-
-.IMG-secundaria{
-  /*Largura da Imagem  */
-  width: 500pt;
-  /* */
-  display: block;
-  /*passa o mause em cima e da efeito */
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-}
-
-.IMG-tec{
-  /*Largura da Imagem  */
-  width: 800pt;
-  /* */
-  display: block;
-  /*passa o mause em cima e da efeito */
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px; 
-}
-
 .grid1{
     display:grid;
     /*Divide o grid em parte, no caso 3 partes de 1fr que seria 33% da pagina */
     grid-template-columns: repeat(1,1fr);
+}
+
+/*Alteração de propriedades da classe box1,box2 e box3.
+-->  setando a propriedade display: flex em todos os boxs.
+---> flex direction : orientação do box(classe) --> column ou row.
+---> flex-wrap: nowrap | wrap | wrap-reverse  --> quebra de itens na linha 
+---> flex-flow: row nowrap | row wrap | column nowrap | column wrap; --> inclui vários valores relacionados a mais de uma propriedade
+---> justify-content: 3 | flex-end | center | space-between | space-around | space-evenly; --> define o alinhamento dos itens dentro do eixo principal 
+-->  align-items: stretch | flex-start | flex-end | center | baseline; --> alinhamento dos itens das colunas.
+*/
+
+.box1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(194, 204, 233);
+}
+.box2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(230, 211, 126);
+}
+
+.box3{
+  display: flex; 
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(196, 233, 148);
+}
+
+.um{
+  flex: 3; 
+} 
+
+.dois{
+  flex: 3;
+}
+
+.tres{
+  flex: 3;
+}
+
+#imgprimeirospassos{
+  height: 190px;
+  width: 250px;
+}
+
+#saibamais{
+    align-self: flex-end;
+}
+
+:dir(footersaibamais){
+    background-color:rgb(65, 204, 209)
+}
+
+:dir(saibamais){
+  background-color: rgb(0, 255, 200);
+}
+
+main{
+  text-align: center;
+}
+
+footer{
+  text-align: center;
 }
 
 .area_form_contact{
