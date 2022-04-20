@@ -5,19 +5,14 @@ html, body {
   box-sizing: border-box;
 }
 
-
-
-
-
 h1, h2{
   text-align: center;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-style: normal;
   font-size: 50px;
   color: #000;
-  
-  
 }
+
 img{ 
   max-width: 100%;
   display: block;
@@ -25,7 +20,6 @@ img{
  
 p{
   display: flex;
-  
   text-align: justify;
   margin-left: auto;
   margin-right: auto;
@@ -33,9 +27,8 @@ p{
   font-size: 30px;
   color:  rgb(6, 96, 138);
   max-width: 1400px;
-  
-
 }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -57,10 +50,10 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
+
 .logo{
   width: 50px;
   height: 50px;
-
 }
 
 /*passa o mause em cima e da efeito */
@@ -70,28 +63,23 @@ body {
 }
 
 .IMG-principal{
-
   width: 600pt;
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /*Aredonda borda */
+  margin-left: auto;
+  margin-right: auto;
+  /*Aredonda borda */
   border-radius: 20px;
-  
 }
 
 .IMG-secundaria{
-/*Largura da Imagem  */
-width: 500pt;
-/* */
-display: block;
-/*passa o mause em cima e da efeito */
+  /*Largura da Imagem  */
+  width: 500pt;
+  /* */
+  display: block;
+  /*passa o mause em cima e da efeito */
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
-
-
-
 }
 
 .IMG-tec{
@@ -100,19 +88,64 @@ display: block;
   /* */
   display: block;
   /*passa o mause em cima e da efeito */
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 20px;
-  
-  
-  
-  }
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px; 
+}
 
-
-  .grid1{
+.grid1{
     display:grid;
     /*Divide o grid em parte, no caso 3 partes de 1fr que seria 33% da pagina */
     grid-template-columns: repeat(1,1fr);
-   ;
+}
 
-  }
+.area_form_contact{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(83, 194, 245);
+  padding: 1px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(83, 194, 245); 
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: auto;
+}
+
+.title_contact{
+  font-size: 30px;
+  text-align: center;
+  color: rgb(0, 146, 179);
+  font-weight: bold;
+  margin-top: 10px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.img_contact{
+  width: 50px;
+  height: 50px;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+
+.form_contact{
+  width: 550px;
+  height: 490px;
+  grid-column: 2;
+  grid-row: 1;
+  padding: 55px;
+  padding-top: 30px;
+}
+
+.form_contact input, textarea{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+  border: none;
+  /* padding: 10px; */
+  margin: 10px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
