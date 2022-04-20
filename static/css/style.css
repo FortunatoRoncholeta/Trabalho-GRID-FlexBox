@@ -33,5 +33,57 @@ body {
   color: black;
 }
 
+/* ------------------------------------------ */
+/* Formatação relativa a fita da tela contato */
+/* ------------------------------------------ */
+.container_fita {
+  /* Center the content */
+  align-items: center;
+  display: grid;
+  justify-content: center;
+
+  /* Background color */
+  background-color: #bbb;
+
+  /* Size */
+  height: 32px;
+
+  /* Use to position the corners */
+  /* position: relative; */
+}
+.container__side {
+  bottom: -8px;
+  position: absolute;
+
+  /* Displayed under the container */
+  z-index: -1;
+
+  /* Background */
+  border: 16px solid #ccc;
+  border-left-color: transparent;
+}
+.container__side--left {
+  left: -24px;
+}
+.container__side--right {
+  right: -24px;
+}
+.container__triangle {
+  position: absolute;
+  top: 100%;
+
+  border: 8px solid transparent;
+  border-bottom-width: 0;
+  border-top-color: #aaa;
+}
+.container__triangle--left {
+  border-right-width: 0;
+  left: 0;
+}
+.container__triangle--right {
+  border-left-width: 0;
+  right: 0;
+}
+
 
 
