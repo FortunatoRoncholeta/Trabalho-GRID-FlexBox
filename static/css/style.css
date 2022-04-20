@@ -13,10 +13,6 @@ h1, h2{
   color: #000;
 }
 
-img{ 
-  max-width: 100%;
-  display: block;
-}
  
 p{
   display: flex;
@@ -68,6 +64,38 @@ body {
     grid-template-columns: repeat(1,1fr);
 }
 
+.IMG-principal{
+  width: 600pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*Aredonda borda */
+  border-radius: 20px;
+}
+
+.IMG-secundaria{
+  /*Largura da Imagem  */
+  width: 500pt;
+  /* */
+  display: block;
+  /*passa o mause em cima e da efeito */
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+.IMG-tec{
+  /*Largura da Imagem  */
+  width: 800pt;
+  /* */
+  display: block;
+  /*passa o mause em cima e da efeito */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px; 
+}
+
+
 /*Alteração de propriedades da classe box1,box2 e box3.
 -->  setando a propriedade display: flex em todos os boxs.
 ---> flex direction : orientação do box(classe) --> column ou row.
@@ -99,15 +127,18 @@ body {
 }
 
 .um{
-  flex: 3; 
+  flex: 3;
+  padding: 20px; 
 } 
 
 .dois{
   flex: 3;
+  padding: 20px; 
 }
 
 .tres{
   flex: 3;
+  padding: 20px; 
 }
 
 #imgprimeirospassos{
@@ -135,6 +166,15 @@ footer{
   text-align: center;
 }
 
+#imgprimeirospassos1, #imgprimeirospassos2, #imgprimeirospassos3, #imgprimeirospassos4, #imgprimeirospassos5, #imgprimeirospassos6{
+  display: block;
+  /*passa o mause em cima e da efeito */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px; 
+}
+
+/* Contact */
 .area_form_contact{
   width: 100%;
   height: 100%;
@@ -164,7 +204,6 @@ footer{
   grid-column: 1;
   grid-row: 1;
 }
-
 
 .form_contact{
   width: 550px;
